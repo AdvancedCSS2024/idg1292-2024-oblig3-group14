@@ -4,4 +4,55 @@
   border: solid black 10px;
   width: 50%;
   height: 200px;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes rotatewave {
+  0% {
+    rotate: 0deg;
+  }
+  20% {
+    rotate: 5deg;
+  }
+  40% {
+    rotate: -5deg;
+  }
+  60% {
+    rotate: 5deg;
+  }
+  80% {
+    rotate: -5deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+@keyframes movewave {
+  0% {
+    right: 0vw;
+  }
+  50% {
+    right: 2vw;
+  }
+  100% {
+    right: 0vw;
+  }
+}
+.backwave {
+  animation: rotatewave 12s infinite;
+  top: 300px;
+}
+
+.frontwave {
+  animation: movewave 4s infinite;
+  top: 500px;
 }/*# sourceMappingURL=test.css.map */
