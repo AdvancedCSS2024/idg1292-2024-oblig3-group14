@@ -11,12 +11,18 @@ body{
    
 
 }
-section{
+ section{
+     height: 100vh;
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+ }
+.container {
+    width: 500%;
     height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
+    display: flex;
+    flex-wrap: nowrap;
+  }
 .scene1{
  
    background-color: skyblue;
@@ -33,18 +39,19 @@ section{
        position: absolute;
        bottom: 1vh;
        animation: rotatewave infinite 12s;
+       width: 500%;
     }
     .frontwave{
         position: absolute;
         bottom: -1vh;
         animation: movewave infinite 8s;
         transform-origin: center;
-        width: 120%;
+        width: 500%;
     }
     .cloud1{
         width: 20vh;
         position: absolute;
-        left: 40vh;
+        left: 40px;
     }
 
 }
