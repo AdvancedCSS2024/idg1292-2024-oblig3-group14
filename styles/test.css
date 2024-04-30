@@ -40,6 +40,11 @@ section {
   transform-origin: center;
   width: 120%;
 }
+.scene1 .cloud1 {
+  width: 20vh;
+  position: absolute;
+  left: 40vh;
+}
 
 .scene2 {
   background-color: red;
