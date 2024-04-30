@@ -10,19 +10,21 @@ body {
   margin: 0 auto;
 }
 
-.scene1 {
+section {
   height: 100vh;
-  width: 100vw;
-  overflow-y: clip;
-  overflow-x: hidden;
-  background-color: skyblue;
+  width: 100%;
+  overflow: hidden;
   position: relative;
+}
+
+.scene1 {
+  background-color: skyblue;
 }
 .scene1 h1 {
   color: white;
   font-size: 5vw;
   margin-left: 3vw;
-  animation: opacityoff 4s ease-out;
+  animation: opacityoff 4s ease-out infinite;
   animation-delay: 4s;
   font-family: sans-serif;
 }
@@ -37,6 +39,14 @@ body {
   animation: movewave infinite 8s;
   transform-origin: center;
   width: 120%;
+}
+
+.scene2 {
+  background-color: red;
+}
+
+.scene3 {
+  background-color: yellow;
 }
 
 @keyframes opacityoff {

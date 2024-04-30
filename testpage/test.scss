@@ -9,20 +9,23 @@
 body{
     margin: 0 auto;
    
-   
+
+}
+section{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 .scene1{
-    height: 100vh;
-    width: 100vw;
-    overflow-y: clip;
-    overflow-x: hidden;
-    background-color: skyblue;
-    position: relative;
+ 
+   background-color: skyblue;
+   
     h1{
         color: white;
         font-size: 5vw;
         margin-left: 3vw; 
-        animation: opacityoff 4s ease-out ;
+        animation: opacityoff 4s ease-out infinite;
         animation-delay: 4s;
         font-family: sans-serif;
     }
@@ -38,7 +41,14 @@ body{
         transform-origin: center;
         width: 120%;
     }
-
+    
+}
+.scene2{
+    background-color: red;
+   
+}
+.scene3{
+    background-color: yellow;
 }
 @keyframes opacityoff{
     0%{opacity: 100%;}
