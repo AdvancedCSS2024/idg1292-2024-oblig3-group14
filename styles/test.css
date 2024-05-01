@@ -8,6 +8,7 @@
 
 body {
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 section {
@@ -15,6 +16,17 @@ section {
   width: 100%;
   overflow: hidden;
   position: relative;
+}
+
+.container {
+  width: 500%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.panel {
+  width: 100vw;
 }
 
 .scene1 {
@@ -30,20 +42,34 @@ section {
 }
 .scene1 .backwave {
   position: absolute;
-  bottom: 1vh;
+  bottom: -5vh;
   animation: rotatewave infinite 12s;
+  width: 20%;
 }
 .scene1 .frontwave {
   position: absolute;
-  bottom: -1vh;
+  bottom: -3vh;
+  left: 0;
   animation: movewave infinite 8s;
-  transform-origin: center;
-  width: 120%;
+  width: 25%;
 }
 .scene1 .cloud1 {
   width: 20vh;
   position: absolute;
-  left: 40vh;
+  left: 40px;
+}
+.scene1 .scene1__beach {
+  position: absolute;
+  width: 90%;
+  right: -7vw;
+  bottom: 0;
+}
+.scene1 .beach__trash {
+  position: absolute;
+  width: 25%;
+  transform: rotate(-40deg);
+  bottom: 1vh;
+  left: 30vw;
 }
 
 .scene2 {
