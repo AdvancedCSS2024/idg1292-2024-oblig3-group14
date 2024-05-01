@@ -36,6 +36,27 @@ body{
 .panel{
     width: 100vw;
 }
+.cloud1{
+    width: 20vh;
+    position: absolute;
+
+    top: 10vh;
+    animation: moveCloud1 50s linear infinite;
+}
+
+.cloud2 {
+    width: 20vh;
+    position: absolute;
+    top: 20vh;
+    animation: moveCloud2 47s linear infinite;
+}
+.cloud3 {
+    width: 20vh;
+    position: absolute;
+    top: 30vh;
+    animation: moveCloud3 51s linear infinite;
+    left: 40px;
+}
 .scene1{
  
    background-color: skyblue;
@@ -66,27 +87,7 @@ body{
        
         
     }
-    .cloud1{
-        width: 20vh;
-        position: absolute;
-
-        top: 10vh;
-        animation: moveCloud1 50s linear infinite;
-    }
-
-    .cloud2 {
-        width: 20vh;
-        position: absolute;
-        top: 20vh;
-        animation: moveCloud2 47s linear infinite;
-    }
-    .cloud3 {
-        width: 20vh;
-        position: absolute;
-        top: 30vh;
-        animation: moveCloud3 51s linear infinite;
-        left: 40px;
-    }
+ 
     .scene1__beach{
         position: absolute;
         width: 90%;
