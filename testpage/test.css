@@ -40,6 +40,12 @@ section {
   transform-origin: center;
   width: 120%;
 }
+.scene1 .cloud1 {
+  width: 20vh;
+  position: absolute;
+  left: 40vh;
+  animation: moveCloud1 50s linear infinite;
+}
 
 .scene2 {
   background-color: red;
@@ -80,5 +86,13 @@ section {
   }
   100% {
     transform: translateX(0vw);
+  }
+}
+@keyframes moveCloud1 {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(100vw);
   }
 }/*# sourceMappingURL=test.css.map */
