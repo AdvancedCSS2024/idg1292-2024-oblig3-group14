@@ -6,15 +6,29 @@
     // gsap code here!
     
     
-    gsap.to(".viewport-container", {
-        scrollTrigger: ".viewport-container",
-         rotation: 7, 
-         y: 1000, 
-         duration: 6
-     });
+  
+    let sections = gsap.utils.toArray(".panel");
+    
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".scene1",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        markers: true,
+        end: () => "+=" + document.querySelector(".container").offsetWidth
+      }
+      
+    });
+
 
 
 
 
 
    });
+
+   
+
