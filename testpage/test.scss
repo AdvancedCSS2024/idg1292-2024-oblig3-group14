@@ -40,19 +40,20 @@ body{
     }
     .backwave{
        position: absolute;
-       bottom: 1vh;
+       bottom: -5vh;
        animation: rotatewave infinite 12s;
-       width: 100%;
+       width: 20%;
     //    height: 300px;
       
     }
     .frontwave{
         position: absolute;
-        bottom: -1vh;
+        bottom: -3vh;
+        left:0;
         animation: movewave infinite 8s;
-        transform-origin: center;
-        width: 5ch;
-        height: 300px;;
+       
+        width: 25%;
+       
         
     }
     .cloud1{
