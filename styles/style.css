@@ -62,8 +62,6 @@ section {
   color: white;
   font-size: 5vw;
   margin-left: 3vw;
-  animation: opacityoff 4s ease-out infinite;
-  animation-delay: 4s;
   font-family: "SuperOcean", sarif;
 }
 .scene1 .backwave {
@@ -157,4 +155,4 @@ section {
   100% {
     transform: translateX(100vw);
   }
-}/*# sourceMappingURL=test.css.map */
+}/*# sourceMappingURL=style.css.map */

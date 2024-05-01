@@ -1,11 +1,9 @@
 @font-face {
-    font-family: 'SuperOcean';
-    src: url("../styles/font/SuperOcean.ttf") format('truetype');
+    font-family: "SuperOcean";
+    src: url("../styles/font/SuperOcean.ttf");
 }
 
-h1 {
-    font-family: monospace;
-}
+
 
 .viewport-container{
     position: sticky; 
@@ -65,9 +63,9 @@ body{
         color: white;
         font-size: 5vw;
         margin-left: 3vw; 
-        animation: opacityoff 4s ease-out infinite;
-        animation-delay: 4s;
-        font-family: sans-serif;
+        //  animation: opacityoff 4s ease-out infinite;
+        // animation-delay: 4s;
+        font-family: 'SuperOcean' , sarif;
     }
     .backwave{
        position: absolute;
