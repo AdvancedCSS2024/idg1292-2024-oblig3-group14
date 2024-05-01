@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SuperOcean";
+  src: url("../styles/font/SuperOcean.ttf") format("truetype");
+}
+h1 {
+  font-family: monospace;
+}
+
 .viewport-container {
   position: sticky;
   margin: 10% auto;
@@ -40,6 +48,24 @@ section {
   transform-origin: center;
   width: 120%;
 }
+.scene1 .cloud1 {
+  width: 20vh;
+  position: absolute;
+  top: 10vh;
+  animation: moveCloud1 50s linear infinite;
+}
+.scene1 .cloud2 {
+  width: 20vh;
+  position: absolute;
+  top: 20vh;
+  animation: moveCloud2 47s linear infinite;
+}
+.scene1 .cloud3 {
+  width: 20vh;
+  position: absolute;
+  top: 30vh;
+  animation: moveCloud3 51s linear infinite;
+}
 
 .scene2 {
   background-color: red;
@@ -80,5 +106,29 @@ section {
   }
   100% {
     transform: translateX(0vw);
+  }
+}
+@keyframes moveCloud1 {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes moveCloud2 {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes moveCloud3 {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(100vw);
   }
 }/*# sourceMappingURL=test.css.map */
