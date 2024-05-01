@@ -8,6 +8,7 @@
 
 body {
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 section {
@@ -56,6 +57,19 @@ section {
   width: 20vh;
   position: absolute;
   left: 40px;
+}
+.scene1 .scene1__beach {
+  position: absolute;
+  width: 90%;
+  right: -7vw;
+  bottom: 0;
+}
+.scene1 .beach__trash {
+  position: absolute;
+  width: 25%;
+  transform: rotate(-40deg);
+  bottom: 1vh;
+  left: 30vw;
 }
 
 .scene2 {
