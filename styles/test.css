@@ -24,6 +24,10 @@ section {
   flex-wrap: nowrap;
 }
 
+.panel {
+  width: 100vw;
+}
+
 .scene1 {
   background-color: skyblue;
 }
@@ -39,14 +43,15 @@ section {
   position: absolute;
   bottom: 1vh;
   animation: rotatewave infinite 12s;
-  width: 500%;
+  width: 100%;
 }
 .scene1 .frontwave {
   position: absolute;
   bottom: -1vh;
   animation: movewave infinite 8s;
   transform-origin: center;
-  width: 500%;
+  width: 5ch;
+  height: 300px;
 }
 .scene1 .cloud1 {
   width: 20vh;
