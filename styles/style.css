@@ -75,13 +75,34 @@ section {
   bottom: -3vh;
   left: 0;
   animation: movewave infinite 8s;
+  z-index: 0;
   width: 25%;
+}
+.scene1 .scene1__fishingboat {
+  width: 30%;
+  position: absolute;
+  bottom: -6vh;
+  left: 40%;
+  animation: rocking-boat 5s infinite;
+  z-index: -5;
+}
+@keyframes rocking-boat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(40px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
 .scene1 .scene1__beach {
   position: absolute;
   width: 90%;
   right: -7vw;
   bottom: 0;
+  z-index: 4;
 }
 .scene1 .beach__trash {
   position: absolute;
@@ -89,6 +110,25 @@ section {
   transform: rotate(-40deg);
   bottom: 1vh;
   left: 30vw;
+  z-index: 5;
+}
+.scene1 .big-wave {
+  position: absolute;
+  z-index: 5;
+  bottom: 0vh;
+  width: 100%;
+  animation: wavearrive 12s ease-in-out infinite;
+}
+@keyframes wavearrive {
+  0% {
+    right: 120vw;
+  }
+  50% {
+    right: 5vw;
+  }
+  100% {
+    right: 120vw;
+  }
 }
 
 .scene2 {
