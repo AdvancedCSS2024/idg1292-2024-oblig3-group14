@@ -123,13 +123,19 @@ body{
     .big-wave{
         position: absolute;
         z-index: 5;
-    
         //values for the wave to cover the trash
         // right: 5vw;
-        
         bottom: 0vh;
         width: 100%;
-        animation: wavearrive 12s ease-in-out infinite;
+        right: 120vw;
+    }
+    .anime_start{
+        animation: wavearrive 12s ease-in-out;
+        animation-delay: 5s;
+        animation-iteration-count: 1;
+    }
+    .beach__trash--hidden{
+        visibility: hidden;
     }
     @keyframes wavearrive {
         0%{right: 120vw;};
