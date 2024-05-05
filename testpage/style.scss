@@ -81,17 +81,36 @@ body{
         bottom: -3vh;
         left:0;
         animation: movewave infinite 8s;
+        z-index: 0;
        
         width: 25%;
-       
-        
     }
- 
+    .scene1__fishingboat{
+        width:30%;
+        position: absolute;
+        bottom: -6vh;
+        left: 40%;
+        animation: rocking-boat 5s infinite;
+        z-index: -5;
+    }
+    @keyframes rocking-boat {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(40px) rotate(5deg);
+        }
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+    }
+    
     .scene1__beach{
         position: absolute;
         width: 90%;
         right: -7vw;
         bottom:0;
+        z-index: 4;
     }
     .beach__trash{
         position: absolute;
@@ -99,11 +118,34 @@ body{
         transform: rotate(-40deg);
         bottom: 1vh;
         left: 30vw;
+        z-index: 5;
     }
-
+    .big-wave{
+        position: absolute;
+        z-index: 5;
+        //values for the wave to cover the trash
+        // right: 5vw;
+        bottom: 0vh;
+        width: 100%;
+        right: 120vw;
+    }
+    .anime_start{
+        animation: wavearrive 12s ease-in-out;
+        animation-delay: 5s;
+        animation-iteration-count: 1;
+    }
+    .beach__trash--hidden{
+        visibility: hidden;
+    }
+    @keyframes wavearrive {
+        0%{right: 120vw;};
+        50%{right: 5vw;}
+        100%{right: 120vw;}
+        
+    };
 }
 .scene2{
-    background-color: red;
+    background-color: #0099ff;
    
 }
 .scene3{
