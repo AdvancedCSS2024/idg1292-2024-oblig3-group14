@@ -1,7 +1,6 @@
 @font-face {
   font-family: "SuperOcean";
-  src: url("../fonts/SuperOcean.ttf");
-  src: url("../fonts/SuperOcean.ttf");
+  src: url("/Assets/fonts/SuperOcean.ttf");
 }
 .viewport-container {
   position: sticky;
@@ -30,25 +29,25 @@ section {
   flex-wrap: nowrap;
 }
 
-.panel {
+.scene1__panel {
   width: 100vw;
 }
 
-.cloud1 {
+.scene1__cloud1 {
   width: 20vh;
   position: absolute;
   top: 10vh;
   animation: moveCloud1 50s linear infinite;
 }
 
-.cloud2 {
+.scene1__cloud2 {
   width: 25vh;
   position: absolute;
   top: 20vh;
   animation: moveCloud2 47s linear infinite;
 }
 
-.cloud3 {
+.scene1__cloud3 {
   width: 20vh;
   position: absolute;
   top: 30vh;
@@ -65,13 +64,13 @@ section {
   margin-left: 3vw;
   font-family: "SuperOcean", sarif;
 }
-.scene1 .backwave {
+.scene1 .scene1__backwave {
   position: absolute;
   bottom: -5vh;
   animation: rotatewave infinite 12s;
   width: 20%;
 }
-.scene1 .frontwave {
+.scene1 .scene1__frontwave {
   position: absolute;
   bottom: -3vh;
   left: 0;
@@ -134,7 +133,7 @@ section {
   left: 30vw;
   z-index: 5;
 }
-.scene1 .big-wave {
+.scene1 .beach__big-wave {
   position: absolute;
   z-index: 5;
   bottom: 0vh;
