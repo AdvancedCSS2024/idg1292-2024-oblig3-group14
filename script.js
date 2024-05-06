@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(Flip, ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin, EaselPlugin, PixiPlugin, TextPlugin);
     
-    let sections = gsap.utils.toArray(".panel");
+    let sections = gsap.utils.toArray(".scene1__panel");
     
 
     gsap.to(sections, {
