@@ -1,6 +1,6 @@
 @font-face {
   font-family: "SuperOcean";
-  src: url("../styles/font/SuperOcean.ttf");
+  src: url(../Assets/fonts/SuperOcean.ttf);
 }
 .viewport-container {
   position: sticky;
