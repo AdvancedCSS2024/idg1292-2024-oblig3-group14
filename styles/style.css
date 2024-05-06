@@ -76,27 +76,7 @@ section {
   left: 0;
   animation: movewave infinite 8s;
   z-index: 0;
-  z-index: 0;
   width: 25%;
-}
-.scene1 .scene1__fishingboat {
-  width: 30%;
-  position: absolute;
-  bottom: -6vh;
-  left: 40%;
-  animation: rocking-boat 5s infinite;
-  z-index: -5;
-}
-@keyframes rocking-boat {
-  0% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(40px) rotate(5deg);
-  }
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
 }
 .scene1 .scene1__fishingboat {
   width: 30%;
@@ -122,7 +102,6 @@ section {
   width: 90%;
   right: -7vw;
   bottom: 0;
-  z-index: 4;
   z-index: 4;
 }
 .scene1 .beach__trash {
@@ -158,39 +137,10 @@ section {
   100% {
     right: 120vw;
   }
-  z-index: 5;
-}
-.scene1 .big-wave {
-  position: absolute;
-  z-index: 5;
-  bottom: 0vh;
-  width: 100%;
-  right: 120vw;
-}
-.scene1 .anime_start {
-  animation: wavearrive 12s ease-in-out;
-  animation-delay: 5s;
-  animation-iteration-count: 1;
-}
-.scene1 .beach__trash--hidden {
-  visibility: hidden;
-}
-@keyframes wavearrive {
-  0% {
-    right: 120vw;
-  }
-  50% {
-    right: 5vw;
-  }
-  100% {
-    right: 120vw;
-  }
 }
 
 .scene2 {
-
   background-image: linear-gradient(to bottom, #0099ff, #0088ee);
-
   background-color: #0099ff;
   /* crab */
   /* jellyfish */
@@ -252,9 +202,16 @@ section {
 .scene5__seabed {
   position: absolute;
   bottom: -10vh;
+  z-index: 1;
+}
+.scene5__seabed-background {
+  position: absolute;
+  z-index: 0;
+  bottom: 6vh;
 }
 .scene5__rock {
   position: absolute;
+  width: 20vw;
   bottom: 1vh;
   left: 8vw;
   z-index: 2;
@@ -266,6 +223,7 @@ section {
   right: 5vw;
   rotate: 200deg;
   bottom: 5vh;
+  z-index: 1;
 }
 .scene5__coral-red {
   position: absolute;
@@ -281,6 +239,7 @@ section {
   height: auto;
   right: 5vw;
   bottom: 7vh;
+  z-index: 2;
 }
 .scene5__coral-purple {
   position: absolute;

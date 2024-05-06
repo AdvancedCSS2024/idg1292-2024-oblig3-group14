@@ -213,14 +213,26 @@ body{
 
 .scene5 {
  background-image: linear-gradient(to bottom, #0066aa, #005588);
+ 
+    &__container {
+
+    }
 
     &__seabed {
         position: absolute;
         bottom: -10vh;
+        z-index: 1;
+    }
+
+    &__seabed-background {
+        position: absolute;
+        z-index: 0;
+        bottom: 6vh;
     }
 
     &__rock {
         position: absolute;
+        width: 20vw;
         bottom: 1vh;
         left: 8vw;
         z-index: 2;
@@ -233,6 +245,7 @@ body{
         right: 5vw;
         rotate: 200deg;
         bottom: 5vh;
+        z-index: 1;
     }
 
     &__coral-red {
@@ -250,6 +263,7 @@ body{
         height: auto;
         right: 5vw;
         bottom: 7vh;
+        z-index: 2;
     }
 
     &__coral-purple {
