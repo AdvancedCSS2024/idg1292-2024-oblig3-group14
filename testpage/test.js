@@ -31,4 +31,16 @@
    });
 
    
+// function createObserver(){
+//   let observer;
+//   let option = {
+//     root: document.querySelector('.beach'),
+//     rootMargin: "0px",
+//     threshold: buildThresholdList(),
+//   }
+// };
 
+// observer = new IntersectionObserver(handleIntersect, options);
+// observer.observe('.big-wave')
+
+document.querySelector('.big-wave').src="svg projects/bigmouth.svg"
