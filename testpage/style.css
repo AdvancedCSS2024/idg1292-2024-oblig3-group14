@@ -36,16 +36,15 @@ section {
 .cloud1 {
   width: 20vh;
   position: absolute;
-  top: 7vh;
+  top: 10vh;
   animation: moveCloud1 50s linear infinite;
 }
 
 .cloud2 {
   width: 25vh;
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   animation: moveCloud2 47s linear infinite;
-  z-index: 3;
 }
 
 .cloud3 {
@@ -60,11 +59,10 @@ section {
   background-color: skyblue;
 }
 .scene1 h1 {
-  color: rgb(0, 72, 255);
+  color: white;
   font-size: 5vw;
   margin-left: 3vw;
   font-family: "SuperOcean", sarif;
-  z-index: 2;
 }
 .scene1 .backwave {
   position: absolute;
