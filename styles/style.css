@@ -140,11 +140,60 @@ section {
 }
 
 .scene2 {
-  background-color: #0099ff;
+  background-image: linear-gradient(to bottom, #0099ff, #0088ee);
 }
 
 .scene3 {
-  background-color: yellow;
+  background-image: linear-gradient(to bottom, #0088ee, #0077cc);
+}
+
+.scene4 {
+  background-image: linear-gradient(to bottom, #0077cc, #0066aa);
+}
+
+.scene5 {
+  background-image: linear-gradient(to bottom, #0066aa, #005588);
+}
+.scene5__seabed {
+  position: absolute;
+  bottom: -10vh;
+}
+.scene5__rock {
+  position: absolute;
+  bottom: 1vh;
+  left: 8vw;
+  z-index: 2;
+}
+.scene5__carlos-tesla {
+  position: absolute;
+  width: 25vw;
+  height: auto;
+  right: 5vw;
+  rotate: 200deg;
+  bottom: 5vh;
+}
+.scene5__coral-red {
+  position: absolute;
+  width: 8vw;
+  height: auto;
+  bottom: 5vh;
+  left: 20vw;
+  z-index: 3;
+}
+.scene5__coral-green {
+  position: absolute;
+  width: 13vw;
+  height: auto;
+  right: 5vw;
+  bottom: 7vh;
+}
+.scene5__coral-purple {
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: 8vw;
+  bottom: 6vh;
+  z-index: 1;
 }
 
 @keyframes opacityoff {
