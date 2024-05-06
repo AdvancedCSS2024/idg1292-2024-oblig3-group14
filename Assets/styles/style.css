@@ -1,6 +1,6 @@
 @font-face {
   font-family: "SuperOcean";
-  src: url(../Assets/fonts/SuperOcean.ttf);
+  src: url("../fonts/SuperOcean.ttf");
 }
 .viewport-container {
   position: sticky;
@@ -75,7 +75,7 @@ section {
   bottom: -3vh;
   left: 0;
   animation: movewave infinite 8s;
-  z-index: 0;
+  z-index: 3;
   width: 25%;
 }
 .scene1 .scene1__fishingboat {
