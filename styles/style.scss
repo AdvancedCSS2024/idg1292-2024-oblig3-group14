@@ -1,6 +1,6 @@
 @font-face {
     font-family: "SuperOcean";
-    src: url("../fonts/SuperOcean.ttf");
+    src: url("/Assets/fonts/SuperOcean.ttf");
 }
 
 
@@ -31,10 +31,10 @@ body{
     display: flex;
     flex-wrap: nowrap;
   }
-.panel{
+.scene1__panel{
     width: 100vw;
 }
-.cloud1{
+.scene1__cloud1{
     width: 20vh;
     position: absolute;
 
@@ -42,13 +42,13 @@ body{
     animation: moveCloud1 50s linear infinite;
 }
 
-.cloud2 {
+.scene1__cloud2 {
     width: 25vh;
     position: absolute;
     top: 20vh;
     animation: moveCloud2 47s linear infinite;
 }
-.cloud3 {
+.scene1__cloud3 {
     width: 20vh;
     position: absolute;
     top: 30vh;
@@ -68,7 +68,7 @@ body{
         // animation-delay: 4s;
         font-family: 'SuperOcean' , sarif;
     }
-    .backwave{
+    .scene1__backwave{
        position: absolute;
        bottom: -5vh;
        animation: rotatewave infinite 12s;
@@ -76,7 +76,7 @@ body{
 
       
     }
-    .frontwave{
+    .scene1__frontwave{
         position: absolute;
         bottom: -3vh;
         left:0;
@@ -120,11 +120,9 @@ body{
         left: 30vw;
         z-index: 5;
     }
-    .big-wave{
+    .beach__big-wave{
         position: absolute;
         z-index: 5;
-        //values for the wave to cover the trash
-        // right: 5vw;
         bottom: 0vh;
         width: 100%;
         right: 120vw;

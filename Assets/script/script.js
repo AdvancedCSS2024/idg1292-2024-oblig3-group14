@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(Flip, ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin, EaselPlugin, PixiPlugin, TextPlugin);
     
-    let sections = gsap.utils.toArray(".panel");
+    let sections = gsap.utils.toArray(".scene1__panel");
     
 
     gsap.to(sections, {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Get the element with the class "big-wave"
-    const bigWave = document.querySelector('.big-wave');
+    const bigWave = document.querySelector('.beach__big-wave');
 
     // Create a new Intersection Observer
     const observer = new IntersectionObserver(entries => {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //changes the image src of the wave, and makes the trash hidden.
 function beachwave(){
-   document.querySelector('.big-wave').src="Assets/img/bigmouthfull.svg";
+   document.querySelector('.beach__big-wave').src="Assets/img/bigmouthfull.svg";
     document.querySelector('.beach__trash').classList.add('beach__trash--hidden');
 };
 
