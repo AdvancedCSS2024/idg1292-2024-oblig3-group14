@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(Flip, ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin, EaselPlugin, PixiPlugin, TextPlugin);
     
     let sections = gsap.utils.toArray(".scene1__panel");
-    
+    let para = gsap.utils.toArray("p");
 
     gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
@@ -16,7 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
             end: () => "+=" + document.querySelector(".container").offsetWidth
         }
     });
+    para.forEach(p => {
+        gsap.to(p, {
+            opacity: 1,
+            duration: 5,
+            scrollTrigger: {
+                trigger: p,
+                scrub: 1,
+                once: true
+                
+            }
+        });
+    });
 
+    
 
 });
 
