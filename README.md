@@ -33,6 +33,9 @@ We decided to turn of the animation of the waves and clouds in the first scene i
 - moveCloud1 - linear infinite
 - moveCloud2 - linear infinite
 - moveCloud3 - linear infinite
+
+###### For the text:
+- textreaveal - opacity change for text
 ###### For the h1 (scene 1)
 - opacityoff
 ###### For the fishes, jellyfish, turtle and crab:
@@ -44,7 +47,8 @@ We decided to turn of the animation of the waves and clouds in the first scene i
 - bounce2 - ease infinite
 ###### Specific for the turtle:
 - rotate - linear infinite
-
+###### For the sinking trash:
+- transition-trash translate the Y axis
 #### Interactions: 
 - 
 #### Observers:
