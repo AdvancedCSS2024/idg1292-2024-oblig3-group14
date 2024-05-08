@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
             pin: true,
             scrub: 1,
             snap: 1 / (sections.length - 1),
-            markers: true,
             end: () => "+=" + document.querySelector(".container").offsetWidth
         }
     });
