@@ -65,5 +65,31 @@ document.addEventListener('DOMContentLoaded', function() {
 function beachwave(){
    document.querySelector('.beach__big-wave').src="Assets/img/bigmouthfull.svg";
     document.querySelector('.beach__trash').classList.add('beach__trash--hidden');
+    document.querySelector('.panel3__text2').classList.remove('panel3__text2--hidden');
+    document.querySelector('.panel3__text2').classList.add('panel3__text2--show');
 };
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the element with the class "big-wave"
+    const scene5Text = document.querySelector('.scene5__text2');
+
+    // Create a new Intersection Observer
+    const observer2 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            // If the element with the class "beach" is intersecting with the viewport
+            if (entry.isIntersecting) {
+                // Add the class "anime_start" to the element with the class "big-wave"
+                setTimeout(() => {
+                    scene5Text.classList.add('scene5__text2--show');
+                    scene5Text.classList.remove('scene5__text2--hidden');
+                }, 5000);
+            } 
+        });
+    });
+
+    // Get the element with the class "beach"
+    const floor = document.querySelector('.scene5');
+
+    // Observe the element with the class "beach"
+    observer2.observe(floor);
+});
