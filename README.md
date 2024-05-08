@@ -15,6 +15,9 @@ The storyboard attached below shows how we mainly wanted our scrollytelling to l
 ###### Image 2/2:
 ![Image Alt Text](Assets/img/storyboard2.jpg)
 
+### Accessability
+We decided to turn of the animation of the waves and clouds in the first scene if the user have turned of animations. This will help make the page more accessable for users that have problems with motions. the rest of the page is not affected because the animations are slow-moving and may not feel as disruptive. 
+
 ### Github page link
 - https://advancedcss2024.github.io/idg1292-2024-oblig3-group14/
 

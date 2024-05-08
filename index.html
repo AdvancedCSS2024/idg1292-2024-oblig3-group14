@@ -1,133 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Turning the tide</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-<script src="Assets/script/script.js" defer></script>    
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="Assets/script/script.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <section class="container scene1">
-    <img class="scene1__backwave" src="Assets/img/wave1.svg">
-    <img class="scene1__frontwave" src="Assets/img/wave2.svg">
-    <img class="scene1__cloud1" src="Assets/img/cloud_1.svg">
-    <img class="scene1__cloud2" src="Assets/img/cloud_2.svg">
-    <img class="scene1__cloud3" src="Assets/img/cloud_3.svg">
-   <div class="scene1__panel blue">
-    <h1>TURNING THE TIDE</h1> 
-    </div>
+      <img class="scene1__backwave" src="Assets/img/wave1.svg" />
+      <img class="scene1__frontwave" src="Assets/img/wave2.svg" />
+      <img class="scene1__cloud1" src="Assets/img/cloud_1.svg" />
+      <img class="scene1__cloud2" src="Assets/img/cloud_2.svg" />
+      <img class="scene1__cloud3" src="Assets/img/cloud_3.svg" />
+      <div class="scene1__panel blue">
+        <h1>TURNING THE TIDE</h1>
+      </div>
 
-   <div class="scene1__panel">
+      <div class="scene1__panel">
+        <p class="panel1__text">
+          The ocean is a huge source of food for people around the world.
+        </p>
+        <img class="scene1__fishingboat" src="Assets/img/fisherboat.svg" />
+      </div>
+      <div class="scene1__panel">
+        <p class="panel2__text">but its ecosystem is under threat…</p>
+      </div>
+      <section class="scene1__panel beach">
+        <p class="panel3__text1">
+          Estimates vary, but it's believed there are tens of millions metric
+          tons of plastic debris littering beaches around the world at any given
+          time.
+        </p>
 
-    <p class="panel1__text">The ocean is a huge source of food for people around the world.</p>
-    <img class="scene1__fishingboat" src="Assets/img/fisherboat.svg">
-   </div>
-   <div class="scene1__panel">
-    <p class="panel2__text">but its ecosystem is under threat…</p>
-    
-   </div>
-    <section class="scene1__panel beach">
-        <p class="panel3__text1">Estimates vary, but it's believed there are tens of millions metric tons of plastic debris littering beaches around the world at any given time. </p>
-        
         <!--Appear after wave takes garbage-->
-        <p class="panel3__text2 panel3__text2--hidden">And further 8 million enters our ocean from said beaches each year. </p>
-        
-        <img class="scene1__beach" src="Assets/img/Beach.svg">
-        <img class="beach__trash" src="Assets/img/trash.svg">
-        <img class="beach__big-wave" src="Assets/img/bigmouth.svg">
-    
-      
+        <p class="panel3__text2 panel3__text2--hidden">
+          And further 8 million enters our ocean from said beaches each year.
+        </p>
+
+        <img class="scene1__beach" src="Assets/img/Beach.svg" />
+        <img class="beach__trash" src="Assets/img/trash.svg" />
+        <img class="beach__big-wave" src="Assets/img/bigmouth.svg" />
+      </section>
     </section>
-</section>
 
     <section class="scene2">
-
-        <p class="scene2__text">Beneath the surface , marine life faces grave risks from pollution. </p>
-        <img class="scene2__fish scene2__fish2" src="Assets/img/fish--happy.svg" alt="fish">
-        <img class="scene2__fish scene2__fish4" src="Assets/img/fish-4.svg" alt="fish">
-        <img class="water_trash1 scene2__trash--hidden" src="Assets/img/trash.svg">
-
+      <p class="scene2__text">
+        Beneath the surface , marine life faces grave risks from pollution.
+      </p>
+      <img
+        class="scene2__fish scene2__fish2"
+        src="Assets/img/fish--happy.svg"
+        alt="fish"
+      />
+      <img
+        class="scene2__fish scene2__fish4"
+        src="Assets/img/fish-4.svg"
+        alt="fish"
+      />
+      <img
+        class="water_trash1 scene2__trash--hidden"
+        src="Assets/img/trash.svg"
+      />
     </section>
     <section class="scene3">
+      <p class="scene3__text">
+        Human waste and plastics destroy habitat for marine life
+      </p>
 
-        <p class="scene3__text">Human waste and plastics destroy habitat for marine life</p>
-
-        <img class="water_trash2" src="Assets/img/trash.svg">
-        <img class="scene3__fish scene3__fish3" src="Assets/img/fish-3.svg" alt="fish">
-        <img class="scene3__fish scene3__fish4" src="Assets/img/fish-4.svg" alt="fish">
-        <img class="scene3__turtle" src="Assets/img/turtle.svg" alt="turtle">
-
+      <img class="water_trash2" src="Assets/img/trash.svg" />
+      <img
+        class="scene3__fish scene3__fish3"
+        src="Assets/img/fish-3.svg"
+        alt="fish"
+      />
+      <img
+        class="scene3__fish scene3__fish4"
+        src="Assets/img/fish-4.svg"
+        alt="fish"
+      />
+      <img class="scene3__turtle" src="Assets/img/turtle.svg" alt="turtle" />
     </section>
 
     <section class="scene4">
-        <img class="water_trash3" src="Assets/img/trash.svg">
-        <img class="scene4__jellyfish" src="Assets/img/jellyfish.svg" alt="jellyfish">
-        <img class="scene4__fish scene4__fish1" src="Assets/img/fish--sad.svg" alt="fish">
-
-
-
-
+      <img class="water_trash3" src="Assets/img/trash.svg" />
+      <img
+        class="scene4__jellyfish"
+        src="Assets/img/jellyfish.svg"
+        alt="jellyfish"
+      />
+      <img
+        class="scene4__fish scene4__fish1"
+        src="Assets/img/fish--sad.svg"
+        alt="fish"
+      />
     </section>
 
-   
-
-
-
     <section class="scene5">
+      <p class="scene5__text1">
+        Even the ocean floor is not immune to human impact.
+      </p>
+      <!--Appears after trash is fished up-->
+      <p class="scene5__text2 scene5__text2--hidden">
+        But all hope is not lost. Innovative solutions, like ocean cleanup
+        initiatives, are helping to address the problem of marine pollution.
+      </p>
 
-        <p class="scene5__text1">Even the ocean floor is not immune to human impact. </p>
-        <!--Appears after trash is fished up-->
-        <p class="scene5__text2 scene5__text2--hidden">But all hope is not lost. Innovative solutions, like ocean cleanup initiatives, are helping to address the problem of marine pollution. </p>
+      <img
+        class="scene5__fish scene5__fish1"
+        src="Assets/img/fish--sad.svg"
+        alt="fish"
+      />
 
-        
-        <img class="scene5__fish scene5__fish1" src="Assets/img/fish--sad.svg" alt="fish">
+      <img class="scene5__seabed" src="Assets/img/seabed.svg" />
 
-            <img class="scene5__seabed" src="Assets/img/seabed.svg">
+      <img
+        class="scene5__seabed-background"
+        src="Assets/img/seabed_background.svg"
+      />
 
-            <img class="scene5__seabed-background" src="Assets/img/seabed_background.svg">
+      <img class="scene5__rock" src="Assets/img/rock.svg" />
 
-            <img class="scene5__rock" src="Assets/img/rock.svg">
+      <img class="scene5__carlos-tesla" src="Assets/img/car.svg" />
 
-            <img class="scene5__carlos-tesla" src="Assets/img/car.svg">
-        
-            <img class="scene5__coral-red" src="Assets/img/red_coral.svg">
-        
-            <img class="scene5__coral-green" src="Assets/img/green_coral.svg">
-        
-            <img class="scene5__coral-purple" src="Assets/img/purple_coral.svg">
+      <img class="scene5__coral-red" src="Assets/img/red_coral.svg" />
 
-            <img class="scene5__crab" src="Assets/img/crab.svg" alt="crab">
+      <img class="scene5__coral-green" src="Assets/img/green_coral.svg" />
 
-            <img class="water_trash4" src="Assets/img/trash.svg">
+      <img class="scene5__coral-purple" src="Assets/img/purple_coral.svg" />
 
-    <!-- <p>Discover how you can make a difference and support ocean conservation efforts.</p> -->
+      <img class="scene5__crab" src="Assets/img/crab.svg" alt="crab" />
+
+      <img class="water_trash4" src="Assets/img/trash.svg" />
+
+      <!-- <p>Discover how you can make a difference and support ocean conservation efforts.</p> -->
     </section>
 
     <section class="scene6">
-        <div class="scene6__section">
-            <h1 class="scene6__h1"> What can you do ?</h1>
-        <a class="scene6__link" href="https://www.globalgoals.org/goals/14-life-below-water/" target="_blank"> Learn more about: Goal 14 - Life below water </a>
-        <a class="scene6__link" href="https://www.globalgoals.org/take-action/" target="_blank"> Take action </a>
-        <a class="scene6__link" href="https://www.globalgoals.org/goals/14-life-below-water/#things-to-do" target="_blank">Things you can do</a>
-        </div>
+      <div class="scene6__section">
+        <h1 class="scene6__h1">What can you do ?</h1>
+        <a
+          class="scene6__link"
+          href="https://www.globalgoals.org/goals/14-life-below-water/"
+          target="_blank"
+        >
+          Learn more about: Goal 14 - Life below water
+        </a>
+        <a
+          class="scene6__link"
+          href="https://www.globalgoals.org/take-action/"
+          target="_blank"
+        >
+          Take action
+        </a>
+        <a
+          class="scene6__link"
+          href="https://www.globalgoals.org/goals/14-life-below-water/#things-to-do"
+          target="_blank"
+          >Things you can do</a
+        >
+      </div>
 
-        <div class="scene6__animation">
-        <img class="scene6__textbox" src="Assets/img/textbox2.png" alt="textbox">
-        <img class="scene6__fish scene6__fish1" src="Assets/img/fish--sad.svg" alt="fish">
-        </div>
-
+      <div class="scene6__animation">
+        <img
+          class="scene6__textbox"
+          src="Assets/img/textbox2.png"
+          alt="textbox"
+        />
+        <img
+          class="scene6__fish scene6__fish1"
+          src="Assets/img/fish--sad.svg"
+          alt="fish"
+        />
+      </div>
     </section>
-</body>
+  </body>
 </html>

@@ -3,23 +3,19 @@
     src: url("../Assets/fonts/SuperOcean.ttf");
 }
 
-
-
-.viewport-container{
-    position: sticky; 
+.viewport-container {
+    position: sticky;
     margin: 10% auto;
     border: solid black 10px;
     width: 50%;
     height: 200px;
 }
 
-body{
+body {
     margin: 0 auto;
     overflow-x: hidden;
-   
-
 }
-p{
+p {
     color: white;
     font-size: 2.5vw;
     font-family: sans-serif;
@@ -28,76 +24,84 @@ p{
     opacity: 0;
 }
 
-.panel1__text, .panel2__text, .panel3__text1, .panel3__text2, .scene2__text, .scene3__text, .scene5__text1, .scene5__text2{
+.panel1__text,
+.panel2__text,
+.panel3__text1,
+.panel3__text2,
+.scene2__text,
+.scene3__text,
+.scene5__text1,
+.scene5__text2 {
     position: absolute;
 }
-.panel1__text{
+.panel1__text {
     top: 40vh;
     left: 10vw;
 }
-.panel2__text{
+.panel2__text {
     top: 50vh;
     right: 30vw;
 }
-.panel3__text1{
+.panel3__text1 {
     left: 3vw;
 }
-.panel3__text2{
+.panel3__text2 {
     top: 55vh;
     left: 3vw;
 }
-.panel3__text2--hidden{
+.panel3__text2--hidden {
     opacity: 0 !important;
 }
-.panel3__text2--show{
-    
+.panel3__text2--show {
     animation: textreveal 12s;
-
 }
 @keyframes textreveal {
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-.scene2__text{
+.scene2__text {
     bottom: 10vh;
     right: 20vw;
 }
-.scene3__text{ 
+.scene3__text {
     left: 3vw;
     top: 30vh;
 }
-.scene5__text1{
+.scene5__text1 {
     right: 5vw;
     bottom: 70vh;
-    
 }
-.scene5__text2{
+.scene5__text2 {
     left: 3vw;
-    bottom: 30vh;
+    bottom: 35vh;
 }
-.scene5__text2--hidden{
+.scene5__text2--hidden {
     visibility: hidden;
 }
-.scene5__text2--show{
+.scene5__text2--show {
     visibility: visible;
     animation: textreveal 3s;
 }
- section{
-     height: 100vh;
-     width: 100%;
-     overflow: hidden;
-     position: relative;
- }
+section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 .container {
     width: 500%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
-  }
-.scene1__panel{
+}
+.scene1__panel {
     width: 100vw;
 }
-.scene1__cloud1{
+.scene1__cloud1 {
     width: 20vh;
     position: absolute;
 
@@ -119,37 +123,34 @@ p{
     left: 40px;
 }
 
-.scene1{
- 
-   background-color: skyblue;
-   
-    h1{
+.scene1 {
+    background-color: skyblue;
+
+    h1 {
         color: white;
         font-size: 5vw;
-        margin-left: 3vw; 
+        margin-left: 3vw;
         //  animation: opacityoff 4s ease-out infinite;
         // animation-delay: 4s;
-        font-family: 'SuperOcean' , sarif;
+        font-family: "SuperOcean", sarif;
     }
-    .scene1__backwave{
-       position: absolute;
-       bottom: -5vh;
-       animation: rotatewave infinite 12s;
-       width: 20%;
-
-      
+    .scene1__backwave {
+        position: absolute;
+        bottom: -5vh;
+        animation: rotatewave infinite 12s;
+        width: 20%;
     }
-    .scene1__frontwave{
+    .scene1__frontwave {
         position: absolute;
         bottom: -3vh;
-        left:0;
+        left: 0;
         animation: movewave infinite 8s;
         z-index: 0;
-       
+
         width: 25%;
     }
-    .scene1__fishingboat{
-        width:30%;
+    .scene1__fishingboat {
+        width: 30%;
         position: absolute;
         bottom: -6vh;
         left: 40%;
@@ -167,15 +168,15 @@ p{
             transform: translateY(0px) rotate(0deg);
         }
     }
-    
-    .scene1__beach{
+
+    .scene1__beach {
         position: absolute;
         width: 90%;
         right: -7vw;
-        bottom:0;
+        bottom: 0;
         z-index: 4;
     }
-    .beach__trash{
+    .beach__trash {
         position: absolute;
         width: 25%;
         transform: rotate(-40deg);
@@ -183,66 +184,83 @@ p{
         left: 30vw;
         z-index: 5;
     }
-    .beach__big-wave{
+    .beach__big-wave {
         position: absolute;
         z-index: 5;
         bottom: 0vh;
         width: 100%;
         right: 120vw;
     }
-    .anime_start{
+    .anime_start {
         animation: wavearrive 12s ease-in-out;
         animation-delay: 5s;
         animation-iteration-count: 1;
     }
-    .beach__trash--hidden{
+    .beach__trash--hidden {
         visibility: hidden;
     }
     @keyframes wavearrive {
-        0%{right: 120vw;};
-        50%{right: 5vw;}
-        100%{right: 120vw;}
-        
-    };
+        0% {
+            right: 120vw;
+        }
+        50% {
+            right: 5vw;
+        }
+        100% {
+            right: 120vw;
+        }
+    }
 }
-.scene2{
-
+.scene2 {
     background-image: linear-gradient(to bottom, #0099ff, #0088ee);
-    
-    &__fish{
+
+    &__fish {
         width: 10vw;
         height: auto;
         top: 30vh;
         margin-left: -100px;
         position: absolute;
-        padding: 20vh; 
+        padding: 20vh;
         -webkit-animation-delay: 0.5s;
         animation-delay: 0.5s;
-    
-        &2{
-            -webkit-animation: swim1 28s linear infinite, bounce 2s infinite;
-            animation: swim1 28s linear infinite, bounce 2s infinite;
+
+        &2 {
+            -webkit-animation:
+                swim1 28s linear infinite,
+                bounce 2s infinite;
+            animation:
+                swim1 28s linear infinite,
+                bounce 2s infinite;
         }
-        &4{
-            -webkit-animation: swim2 25s linear infinite, bounce 1.1s infinite;
-            animation: swim2 25s linear infinite, bounce 1.1s infinite;
+        &4 {
+            -webkit-animation:
+                swim2 25s linear infinite,
+                bounce 1.1s infinite;
+            animation:
+                swim2 25s linear infinite,
+                bounce 1.1s infinite;
         }
     }
-
 }
 
-.scene3{
+.scene3 {
     background-image: linear-gradient(to bottom, #0088ee, #0077cc);
-    &__turtle{
+    &__turtle {
         width: 22vh;
         height: 14vh;
         margin-left: -100px;
         bottom: 30vh;
         position: absolute;
-        -webkit-animation: swim3 100s linear infinite, bounce 10s infinite, rotate 7s linear infinite;
-        animation: swim3 100s linear infinite, bounce 10s infinite, rotate 7s linear infinite;
+        -webkit-animation:
+            swim3 100s linear infinite,
+            bounce 10s infinite,
+            rotate 7s linear infinite;
+        animation:
+            swim3 100s linear infinite,
+            bounce 10s infinite,
+            rotate 7s linear infinite;
     }
-    &__fish{
+    &__fish {
         width: 10vw;
         height: auto;
         top: 30vh;
@@ -250,59 +268,77 @@ p{
         position: absolute;
         -webkit-animation-delay: 0.5s;
         animation-delay: 0.5s;
-        &3{
-            -webkit-animation: swim1 23s linear infinite, bounce 0.8s infinite;
-            animation: swim1 23s linear infinite, bounce 0.8s infinite;
+        &3 {
+            -webkit-animation:
+                swim1 23s linear infinite,
+                bounce 0.8s infinite;
+            animation:
+                swim1 23s linear infinite,
+                bounce 0.8s infinite;
         }
-        &4{
-            -webkit-animation: swim2 25s linear infinite, bounce 1.1s infinite;
-            animation: swim2 25s linear infinite, bounce 1.1s infinite;
+        &4 {
+            -webkit-animation:
+                swim2 25s linear infinite,
+                bounce 1.1s infinite;
+            animation:
+                swim2 25s linear infinite,
+                bounce 1.1s infinite;
         }
     }
 }
 
 .scene4 {
- background-image: linear-gradient(to bottom, #0077cc, #0066aa);
- 
- &__fish{
-    width: 10vw;
-    height: auto;
-    top: 30vh;
-    margin-left: -100px;
-    position: absolute;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-    &1{
-        -webkit-animation: swim1 55s linear infinite, bounce 4s infinite;
-        animation: swim1 55s linear infinite, bounce 4s infinite;
+    background-image: linear-gradient(to bottom, #0077cc, #0066aa);
+
+    &__fish {
+        width: 10vw;
+        height: auto;
+        top: 30vh;
+        margin-left: -100px;
+        position: absolute;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        &1 {
+            -webkit-animation:
+                swim1 55s linear infinite,
+                bounce 4s infinite;
+            animation:
+                swim1 55s linear infinite,
+                bounce 4s infinite;
+        }
     }
-}
- 
- &__jellyfish{
-    width: 18vh;
-    animation: bounce2 2s ease infinite, swim2 400s infinite;
-    position: absolute;
-    bottom: 10vh;
-    margin-left: 0;
-}
+
+    &__jellyfish {
+        width: 18vh;
+        animation:
+            bounce2 2s ease infinite,
+            swim2 400s infinite;
+        position: absolute;
+        bottom: 10vh;
+        margin-left: 0;
+    }
 }
 
 .scene5 {
- background-image: linear-gradient(to bottom, #0066aa, #005588);
- 
- &__fish{
-    width: 10vw;
-    height: auto;
-    top: 30vh;
-    margin-left: -100px;
-    position: absolute;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-    &1{
-        -webkit-animation: swim1 85s linear infinite, bounce 6s infinite;
-        animation: swim1 85s linear infinite, bounce 6s infinite;
+    background-image: linear-gradient(to bottom, #0066aa, #005588);
+
+    &__fish {
+        width: 10vw;
+        height: auto;
+        top: 30vh;
+        margin-left: -100px;
+        position: absolute;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        &1 {
+            -webkit-animation:
+                swim1 85s linear infinite,
+                bounce 6s infinite;
+            animation:
+                swim1 85s linear infinite,
+                bounce 6s infinite;
+        }
     }
-}
 
     &__seabed {
         position: absolute;
@@ -368,233 +404,351 @@ p{
         margin-left: -235px;
         position: absolute;
         bottom: 0;
-        -webkit-animation: swim4 150s linear infinite, bounce 0.25s infinite;
-        animation: swim4 150s linear infinite, bounce 0.25s infinite;
+        -webkit-animation:
+            swim4 150s linear infinite,
+            bounce 0.25s infinite;
+        animation:
+            swim4 150s linear infinite,
+            bounce 0.25s infinite;
         z-index: 11;
     }
-    
 }
 
-.scene6{
+.scene6 {
     background-color: rgba(0, 0, 0, 0.858);
-    &__section{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    &__section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
-    &__h1{
+    &__h1 {
         color: white;
         text-align: center;
         font-size: 6vh;
     }
-        &__link{ 
-            list-style-type: none;
-            padding: 4vh;
-            border: 1px white dotted;
-            border-radius: 4vh;
-            margin: 3vh;
-            text-decoration: none;
-            font-size: 4vh;
-            color: white;
-            width: 50vh;
-            &:hover{
-                background-color: rgb(112, 101, 38);
-                cursor: pointer;
-            }
+    &__link {
+        list-style-type: none;
+        padding: 4vh;
+        border: 1px white dotted;
+        border-radius: 4vh;
+        margin: 3vh;
+        text-decoration: none;
+        font-size: 4vh;
+        color: white;
+        width: 50vh;
+        &:hover {
+            background-color: rgb(112, 101, 38);
+            cursor: pointer;
+        }
     }
 
- 
-
-&__fish, &__textbox{
-    width: 10vw;
-    height: auto;
-    top: 30vh;
-    margin-left: -100px;
-    margin-top: -200px;
-    position: absolute;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-    z-index: 3;
-    overflow: visible;
-}
-&__textbox{
-    width: 6vw;
-    margin-left: -150px;
-}
-&__animation{
-        -webkit-animation: swim1 150s linear infinite, bounce 6s infinite;
-        animation: swim1 150s linear infinite, bounce 6s infinite;
-}
-}
-
-@keyframes opacityoff{
-    0%{opacity: 100%;}
-    100%{opacity: 0;}
+    &__fish,
+    &__textbox {
+        width: 10vw;
+        height: auto;
+        top: 30vh;
+        margin-left: -100px;
+        margin-top: -200px;
+        position: absolute;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        z-index: 3;
+        overflow: visible;
+    }
+    &__textbox {
+        width: 6vw;
+        margin-left: -150px;
+    }
+    &__animation {
+        -webkit-animation:
+            swim1 150s linear infinite,
+            bounce 6s infinite;
+        animation:
+            swim1 150s linear infinite,
+            bounce 6s infinite;
+    }
 }
 
-
-@keyframes rotatewave{
-    0%{rotate: 0deg;}
-    33%{rotate: 5deg;}
-    66%{rotate: -5deg;}
-    100%{rotate: 0deg;}
-    
+@keyframes opacityoff {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
-@keyframes movewave{
-    0%{transform: translateX(0vw)}
-    50%{transform: translateX(-6vw)}
-    100%{transform: translateX(0vw)}
+@keyframes rotatewave {
+    0% {
+        rotate: 0deg;
+    }
+    33% {
+        rotate: 5deg;
+    }
+    66% {
+        rotate: -5deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes movewave {
+    0% {
+        transform: translateX(0vw);
+    }
+    50% {
+        transform: translateX(-6vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
 }
 
 @keyframes moveCloud1 {
-    0% { transform: translateX(-300px); }
-    100% { transform: translateX(100vw); }
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
 }
 
-@keyframes moveCloud2 { 
-    0% { transform: translateX(-150px); }
-    100% { transform: translateX(100vw);}
+@keyframes moveCloud2 {
+    0% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
 }
 
 @keyframes moveCloud3 {
-    0% { transform: translateX(-500px); }
-    100% { transform: translateX(100vw); }
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
 }
 
 /* Animations for the sea animals */
 
 /* swim1 */
 @-webkit-keyframes swim1 {
-    0% {margin-left: 100%;}
-    10% {margin-left: 100%;}
-    100% {margin-left: -235px;}
+    0% {
+        margin-left: 100%;
+    }
+    10% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -235px;
+    }
 }
 
 @keyframes swim1 {
-    0% {margin-left: 100%;}
-    10% {margin-left: 100%;}
-    100% {margin-left: -235px;}
+    0% {
+        margin-left: 100%;
+    }
+    10% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -235px;
+    }
 }
 
 /* swim2 */
 @-webkit-keyframes swim2 {
-    0% {margin-left: -235px}
-    90% {margin-left: 100%;}
-    100% {margin-left: 100%;}
+    0% {
+        margin-left: -235px;
+    }
+    90% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 100%;
+    }
 }
 
 @keyframes swim2 {
-    0% {margin-left: -235px}
-    70% {margin-left: 100%;}
-    100% {margin-left: 100%;}
+    0% {
+        margin-left: -235px;
+    }
+    70% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 100%;
+    }
 }
 
 /* swim3 */
 @-webkit-keyframes swim3 {
-    0% {margin-left: 100%;}
-    10% {margin-left: 100%;}
-    100% {margin-left: -150px;}
+    0% {
+        margin-left: 100%;
+    }
+    10% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -150px;
+    }
 }
 
 @keyframes swim3 {
-    0% {margin-left: 100%;}
-    10% {margin-left: 100%;}
-    100% {margin-left: -150px;}
+    0% {
+        margin-left: 100%;
+    }
+    10% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -150px;
+    }
 }
 
 /* swim4 */
 @-webkit-keyframes swim4 {
-    0% {margin-left: 30px}
-    45% {margin-left: 100%;}
-    55% {margin-left: 100%;}
-    100% {margin-left: 30px;}
+    0% {
+        margin-left: 30px;
+    }
+    45% {
+        margin-left: 100%;
+    }
+    55% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 30px;
+    }
 }
 
 @keyframes swim4 {
-    0% {margin-left: 30px}
-    45% {margin-left: 100%;}
-    55% {margin-left: 100%;}
-    100% {margin-left: 30px;}
+    0% {
+        margin-left: 30px;
+    }
+    45% {
+        margin-left: 100%;
+    }
+    55% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 30px;
+    }
 }
 
 /* bounce */
 @keyframes bounce {
-    0%, 100% { transform: translateY(0);}
-    50% { transform: translateY(-7.5px);}
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7.5px);
+    }
 }
 
 @-webkit-keyframes bounce {
-    0%, 100% { -webkit-transform: translateY(0);}
-    50% { -webkit-transform: translateY(-7.5px);}
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-7.5px);
+    }
 }
 
 /* bounce2 */
 @keyframes bounce2 {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-20px);}
-    60% {transform: translateY(-10px);}
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
 }
 
 /* Rotate */
 @keyframes rotate {
-    0% { transform: rotate(-15deg)}
-    25% { transform: rotate(-5deg)}
-    75% { transform: rotate(5deg)}
-    100%{ transform: rotate(-15deg)}
-  }
+    0% {
+        transform: rotate(-15deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
 
 /* End of animations for sea animals */
-
 
 // Making trash descend down the website
 // Make trash start at scene 2 and then descend to scene 5
 @keyframes transition-trash {
-    0% { transform: translateY(-50vh); }  
-    20% { transform: translateY(100vh); } 
-    40% { transform: translateY(200vh); } 
-    80% { transform: translateY(300vh); } 
-    100% { transform: translateY(376vh); } 
+    0% {
+        transform: translateY(-50vh);
+    }
+    20% {
+        transform: translateY(100vh);
+    }
+    40% {
+        transform: translateY(200vh);
+    }
+    80% {
+        transform: translateY(300vh);
+    }
+    100% {
+        transform: translateY(376vh);
+    }
 }
 .water_trash1,
 .water_trash2,
 .water_trash3,
-.water_trash4{
+.water_trash4 {
     z-index: 10;
     right: 40vw;
     position: absolute;
-    width: 25%; 
+    width: 25%;
 }
-.scene2__trash--hidden{
+.scene2__trash--hidden {
     visibility: hidden;
 }
-
-
-
 
 .scene2__trash,
 .scene3__trash,
 .scene4__trash,
 .scene5__trash {
-  
-    animation: transition-trash 20s linear forwards; 
+    animation: transition-trash 20s linear forwards;
 }
 /* Position the trash appropriately within each scene container */
 .scene2__trash {
-    top: 0;  
+    top: 0;
 }
 .scene3__trash {
-    top: -100vh;  
+    top: -100vh;
 }
 .scene4__trash {
-    top: -200vh;  
+    top: -200vh;
 }
 .scene5__trash {
-    top: -300vh;  
+    top: -300vh;
 }
-
 
 // Media queries
 
@@ -667,41 +821,94 @@ p{
         margin-left: -235px;
         position: absolute;
         bottom: 0;
-        -webkit-animation: swim4 90s linear infinite, bounce 0.25s infinite;
-        animation: swim4 90s linear infinite, bounce 0.25s infinite;
+        -webkit-animation:
+            swim4 90s linear infinite,
+            bounce 0.25s infinite;
+        animation:
+            swim4 90s linear infinite,
+            bounce 0.25s infinite;
         z-index: 10;
     }
 
     @keyframes transition-trash {
-        0% { transform: translateY(-50vh); }  
-        20% { transform: translateY(100vh); } 
-        40% { transform: translateY(200vh); } 
-        80% { transform: translateY(300vh); } 
-        100% { transform: translateY(393vh); } 
+        0% {
+            transform: translateY(-50vh);
+        }
+        20% {
+            transform: translateY(100vh);
+        }
+        40% {
+            transform: translateY(200vh);
+        }
+        80% {
+            transform: translateY(300vh);
+        }
+        100% {
+            transform: translateY(393vh);
+        }
     }
 }
 
 @media (max-width: 480px) {
-    
     @keyframes transition-trash {
-        0% { transform: translateY(-50vh); }  
-        20% { transform: translateY(100vh); } 
-        40% { transform: translateY(200vh); } 
-        80% { transform: translateY(300vh); } 
-        100% { transform: translateY(395vh); } 
+        0% {
+            transform: translateY(-50vh);
+        }
+        20% {
+            transform: translateY(100vh);
+        }
+        40% {
+            transform: translateY(200vh);
+        }
+        80% {
+            transform: translateY(300vh);
+        }
+        100% {
+            transform: translateY(395vh);
+        }
     }
-
 }
 
 @media (max-width: 1200px) {
-    
     @keyframes transition-trash {
-        0% { transform: translateY(-50vh); }  
-        20% { transform: translateY(100vh); } 
-        40% { transform: translateY(200vh); } 
-        80% { transform: translateY(300vh); } 
-        100% { transform: translateY(385vh); } 
+        0% {
+            transform: translateY(-50vh);
+        }
+        20% {
+            transform: translateY(100vh);
+        }
+        40% {
+            transform: translateY(200vh);
+        }
+        80% {
+            transform: translateY(300vh);
+        }
+        100% {
+            transform: translateY(385vh);
+        }
     }
-
 }
 
+@media (prefers-reduced-motion) {
+    .scene1__frontwave {
+        animation: none !important;
+    }
+    .scene1__backwave {
+        animation: none !important;
+    }
+    .scene1__cloud1 {
+        animation: none;
+        position: absolute;
+        left: 60vw;
+    }
+    .scene1__cloud2 {
+        animation: none;
+        position: absolute;
+        left: 45vw;
+    }
+    .scene1__cloud3 {
+        animation: none;
+        position: absolute;
+        left: 80vw;
+    }
+}

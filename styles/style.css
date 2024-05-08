@@ -24,7 +24,14 @@ p {
   opacity: 0;
 }
 
-.panel1__text, .panel2__text, .panel3__text1, .panel3__text2, .scene2__text, .scene3__text, .scene5__text1, .scene5__text2 {
+.panel1__text,
+.panel2__text,
+.panel3__text1,
+.panel3__text2,
+.scene2__text,
+.scene3__text,
+.scene5__text1,
+.scene5__text2 {
   position: absolute;
 }
 
@@ -80,7 +87,7 @@ p {
 
 .scene5__text2 {
   left: 3vw;
-  bottom: 30vh;
+  bottom: 35vh;
 }
 
 .scene5__text2--hidden {
@@ -247,6 +254,7 @@ section {
   margin-left: -100px;
   bottom: 30vh;
   position: absolute;
+  -webkit-animation: swim3 100s linear infinite, bounce 10s infinite, rotate 7s linear infinite;
   animation: swim3 100s linear infinite, bounce 10s infinite, rotate 7s linear infinite;
 }
 .scene3__fish {
@@ -479,6 +487,17 @@ section {
 }
 /* Animations for the sea animals */
 /* swim1 */
+@-webkit-keyframes swim1 {
+  0% {
+    margin-left: 100%;
+  }
+  10% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: -235px;
+  }
+}
 @keyframes swim1 {
   0% {
     margin-left: 100%;
@@ -491,6 +510,17 @@ section {
   }
 }
 /* swim2 */
+@-webkit-keyframes swim2 {
+  0% {
+    margin-left: -235px;
+  }
+  90% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
 @keyframes swim2 {
   0% {
     margin-left: -235px;
@@ -503,6 +533,17 @@ section {
   }
 }
 /* swim3 */
+@-webkit-keyframes swim3 {
+  0% {
+    margin-left: 100%;
+  }
+  10% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: -150px;
+  }
+}
 @keyframes swim3 {
   0% {
     margin-left: 100%;
@@ -515,6 +556,20 @@ section {
   }
 }
 /* swim4 */
+@-webkit-keyframes swim4 {
+  0% {
+    margin-left: 30px;
+  }
+  45% {
+    margin-left: 100%;
+  }
+  55% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 30px;
+  }
+}
 @keyframes swim4 {
   0% {
     margin-left: 30px;
@@ -536,6 +591,14 @@ section {
   }
   50% {
     transform: translateY(-7.5px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-7.5px);
   }
 }
 /* bounce2 */
@@ -740,5 +803,28 @@ section {
     100% {
       transform: translateY(385vh);
     }
+  }
+}
+@media (prefers-reduced-motion) {
+  .scene1__frontwave {
+    animation: none !important;
+  }
+  .scene1__backwave {
+    animation: none !important;
+  }
+  .scene1__cloud1 {
+    animation: none;
+    position: absolute;
+    left: 60vw;
+  }
+  .scene1__cloud2 {
+    animation: none;
+    position: absolute;
+    left: 45vw;
+  }
+  .scene1__cloud3 {
+    animation: none;
+    position: absolute;
+    left: 80vw;
   }
 }/*# sourceMappingURL=style.css.map */
