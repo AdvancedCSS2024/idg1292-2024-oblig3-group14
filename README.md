@@ -16,7 +16,7 @@ The storyboard attached below shows how we mainly wanted our scrollytelling to l
 ![Image Alt Text](Assets/img/storyboard2.jpg)
 
 ### Github page link
-- LINK
+- https://advancedcss2024.github.io/idg1292-2024-oblig3-group14/
 
 ### Technology stack: animations, interactions and observers implemented
 #### Animations:
