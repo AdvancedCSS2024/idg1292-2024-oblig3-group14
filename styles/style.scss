@@ -147,80 +147,117 @@ body{
     background-image: linear-gradient(to bottom, #0099ff, #0088ee);
     
     background-color: #0099ff;
-    .fish{
-        width: 20vh;
-        height: 20vh;
-        margin-left: -235px;
+    &__fish{
+        width: 10vw;
+        height: auto;
+        top: 30vh;
+        margin-left: -100px;
         position: absolute;
+        padding: 20vh; 
         -webkit-animation-delay: 0.5s;
         animation-delay: 0.5s;
     
-        &__1{
-            -webkit-animation: swim1 42s linear infinite, bounce 4s infinite;
-            animation: swim1 42s linear infinite, bounce 4s infinite;
-        }
-        &__2{
+        &2{
             -webkit-animation: swim1 28s linear infinite, bounce 2s infinite;
             animation: swim1 28s linear infinite, bounce 2s infinite;
         }
-        &__3{
-            -webkit-animation: swim1 23s linear infinite, bounce 0.8s infinite;
-            animation: swim1 23s linear infinite, bounce 0.8s infinite;
-        }
-        &__4{
+        &4{
             -webkit-animation: swim2 25s linear infinite, bounce 1.1s infinite;
             animation: swim2 25s linear infinite, bounce 1.1s infinite;
         }
     }
-    
-    /* crab */
-    .crab{
-        width: 22h;
-        height: 14vh;
-        margin-left: -235px;
-        position: absolute;
-        bottom: 0;
-        -webkit-animation: swim4 90s linear infinite, bounce 0.25s infinite;
-        animation: swim4 90s linear infinite, bounce 0.25s infinite;
-    }
-    
-    /* jellyfish */
-    .jellyfish{
-        width: 18vh;
-        animation: bounce2 2s ease infinite;
-        position: absolute;
-        bottom: 10vh;
-    }
-    
-    /* turtle */
-    .turtle{
+
+}
+
+.scene3{
+    background-image: linear-gradient(to bottom, #0088ee, #0077cc);
+    &__turtle{
         width: 22vh;
         height: 14vh;
-        margin-left: -235px;
+        margin-left: -100px;
         bottom: 30vh;
         position: absolute;
         -webkit-animation: swim3 100s linear infinite, bounce 10s infinite, rotate 7s linear infinite;
         animation: swim3 100s linear infinite, bounce 10s infinite, rotate 7s linear infinite;
     }
-}
-.scene3{
-    background-image: linear-gradient(to bottom, #0088ee, #0077cc)
+    &__fish{
+        width: 10vw;
+        height: auto;
+        top: 30vh;
+        margin-left: -100px;
+        position: absolute;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        &3{
+            -webkit-animation: swim1 23s linear infinite, bounce 0.8s infinite;
+            animation: swim1 23s linear infinite, bounce 0.8s infinite;
+        }
+        &4{
+            -webkit-animation: swim2 25s linear infinite, bounce 1.1s infinite;
+            animation: swim2 25s linear infinite, bounce 1.1s infinite;
+        }
+    }
 }
 
 .scene4 {
  background-image: linear-gradient(to bottom, #0077cc, #0066aa);
+ 
+ &__fish{
+    width: 10vw;
+    height: auto;
+    top: 30vh;
+    margin-left: -100px;
+    position: absolute;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    &1{
+        -webkit-animation: swim1 55s linear infinite, bounce 4s infinite;
+        animation: swim1 55s linear infinite, bounce 4s infinite;
+    }
+}
+ 
+ &__jellyfish{
+    width: 18vh;
+    animation: bounce2 2s ease infinite, swim2 400s infinite;
+    position: absolute;
+    bottom: 10vh;
+    margin-left: 0;
+}
 }
 
 .scene5 {
  background-image: linear-gradient(to bottom, #0066aa, #005588);
+ 
+ &__fish{
+    width: 10vw;
+    height: auto;
+    top: 30vh;
+    margin-left: -100px;
+    position: absolute;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    &1{
+        -webkit-animation: swim1 85s linear infinite, bounce 6s infinite;
+        animation: swim1 85s linear infinite, bounce 6s infinite;
+    }
+}
 
     &__seabed {
         position: absolute;
-        bottom: -10vh;
+        bottom: 0vh;
+        z-index: 1;
+    }
+
+    &__seabed-background {
+        position: absolute;
+        z-index: 0;
+        bottom: 0vh;
+        height: 60vh;
     }
 
     &__rock {
         position: absolute;
+        width: 20vw;
         bottom: 1vh;
         left: 8vw;
         z-index: 2;
@@ -233,6 +270,7 @@ body{
         right: 5vw;
         rotate: 200deg;
         bottom: 5vh;
+        z-index: 1;
     }
 
     &__coral-red {
@@ -249,7 +287,8 @@ body{
         width: 13vw;
         height: auto;
         right: 5vw;
-        bottom: 7vh;
+        bottom: 5vh;
+        z-index: 2;
     }
 
     &__coral-purple {
@@ -257,9 +296,21 @@ body{
         width: 10vw;
         height: auto;
         left: 8vw;
-        bottom: 6vh;
+        bottom: 5vh;
         z-index: 1;
     }
+
+    &__crab {
+        width: 22vh;
+        height: 14vh;
+        margin-left: -235px;
+        position: absolute;
+        bottom: 0;
+        -webkit-animation: swim4 150s linear infinite, bounce 0.25s infinite;
+        animation: swim4 150s linear infinite, bounce 0.25s infinite;
+        z-index: 11;
+    }
+    
 }
 @keyframes opacityoff{
     0%{opacity: 100%;}
@@ -379,3 +430,113 @@ body{
   }
 
 /* End of animations for sea animals */
+
+// Making trash descend down the website
+// Make trash start at scene 2 and then descend to scene 5
+@keyframes transition-trash {
+    0% { transform: translateY(-50vh); }  
+    20% { transform: translateY(100vh); } 
+    40% { transform: translateY(200vh); } 
+    80% { transform: translateY(300vh); } 
+    100% { transform: translateY(378vh); } 
+}
+.scene2__trash,
+.scene3__trash,
+.scene4__trash,
+.scene5__trash {
+    position: absolute;
+    width: 25%; 
+    animation: transition-trash 20s linear forwards; 
+    z-index: 10;
+    right: 40vw;
+}
+/* Position the trash appropriately within each scene container */
+.scene2__trash {
+    top: 0;  
+}
+.scene3__trash {
+    top: -100vh;  
+}
+.scene4__trash {
+    top: -200vh;  
+}
+.scene5__trash {
+    top: -300vh;  
+}
+
+// Media queries
+
+@media (max-width: 768px) {
+    .scene5 {
+        background-image: linear-gradient(to bottom, #0066aa, #005588);
+    }
+
+    .scene5__seabed {
+        position: absolute;
+        bottom: 0vh;
+        z-index: 1;
+    }
+
+    .scene5__seabed-background {
+        position: absolute;
+        z-index: 0;
+        bottom: 0vh;
+        height: 20vh;
+    }
+
+    .scene5__rock {
+        position: absolute;
+        width: 20vw;
+        bottom: 1vh;
+        left: 8vw;
+        z-index: 2;
+    }
+
+    .scene5__carlos-tesla {
+        position: absolute;
+        width: 25vw;
+        height: auto;
+        right: 5vw;
+        rotate: 200deg;
+        bottom: 1vh;
+        z-index: 1;
+    }
+
+    .scene5__coral-red {
+        position: absolute;
+        width: 8vw;
+        height: auto;
+        bottom: 1vh;
+        left: 20vw;
+        z-index: 3;
+    }
+
+    .scene5__coral-green {
+        position: absolute;
+        width: 13vw;
+        height: auto;
+        right: 5vw;
+        bottom: 1vh;
+        z-index: 2;
+    }
+
+    .scene5__coral-purple {
+        position: absolute;
+        width: 10vw;
+        height: auto;
+        left: 8vw;
+        bottom: 1vh;
+        z-index: 1;
+    }
+
+    .scene5__crab {
+        width: 6vh;
+        height: auto;
+        margin-left: -235px;
+        position: absolute;
+        bottom: 0;
+        -webkit-animation: swim4 90s linear infinite, bounce 0.25s infinite;
+        animation: swim4 90s linear infinite, bounce 0.25s infinite;
+        z-index: 10;
+    }
+}
