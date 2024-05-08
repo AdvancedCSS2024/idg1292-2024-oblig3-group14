@@ -1,6 +1,6 @@
 @font-face {
   font-family: "SuperOcean";
-  src: url("/Assets/fonts/SuperOcean.ttf");
+  src: url("Assets/fonts/SuperOcean.ttf");
 }
 .viewport-container {
   position: sticky;
@@ -408,6 +408,7 @@ section {
   margin-left: -100px;
   margin-top: -200px;
   position: absolute;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
   z-index: 3;
   overflow: visible;
@@ -417,6 +418,7 @@ section {
   margin-left: -150px;
 }
 .scene6__animation {
+  -webkit-animation: swim1 150s linear infinite, bounce 6s infinite;
   animation: swim1 150s linear infinite, bounce 6s infinite;
 }
 
