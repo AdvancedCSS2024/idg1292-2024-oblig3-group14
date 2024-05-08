@@ -226,7 +226,6 @@ section {
   top: 30vh;
   margin-left: -100px;
   position: absolute;
-
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
@@ -393,7 +392,7 @@ padding: 20vh;
   position: absolute;
   bottom: 0;
   animation: swim4 150s linear infinite, bounce 0.25s infinite;
-  z-index: 10;
+  z-index: 11;
 }
 
 @keyframes opacityoff {
@@ -597,6 +596,52 @@ padding: 20vh;
   }
 }
 /* End of animations for sea animals */
+@keyframes transition-trash {
+  0% {
+    transform: translateY(-50vh);
+  }
+  20% {
+    transform: translateY(100vh);
+  }
+  40% {
+    transform: translateY(200vh);
+  }
+  80% {
+    transform: translateY(300vh);
+  }
+  100% {
+    transform: translateY(378vh);
+  }
+}
+.scene2__trash,
+.scene3__trash,
+.scene4__trash,
+.scene5__trash {
+  position: absolute;
+  width: 25%;
+  animation: transition-trash 20s linear forwards;
+  z-index: 10;
+  right: 40vw;
+}
+
+/* Position the trash appropriately within each scene container */
+.scene2__trash {
+  top: 0;
+}
+
+.scene3__trash {
+  top: -100vh;
+}
+
+.scene4__trash {
+  top: -200vh;
+}
+
+.scene5__trash {
+  top: -300vh;
+}
+
+
 @media (max-width: 768px) {
   .scene5 {
     background-image: linear-gradient(to bottom, #0066aa, #005588);

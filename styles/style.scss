@@ -371,7 +371,7 @@ p{
         bottom: 0;
         -webkit-animation: swim4 150s linear infinite, bounce 0.25s infinite;
         animation: swim4 150s linear infinite, bounce 0.25s infinite;
-        z-index: 10;
+        z-index: 11;
     }
     
 }
@@ -493,6 +493,41 @@ p{
   }
 
 /* End of animations for sea animals */
+
+
+// Making trash descend down the website
+// Make trash start at scene 2 and then descend to scene 5
+@keyframes transition-trash {
+    0% { transform: translateY(-50vh); }  
+    20% { transform: translateY(100vh); } 
+    40% { transform: translateY(200vh); } 
+    80% { transform: translateY(300vh); } 
+    100% { transform: translateY(378vh); } 
+}
+.scene2__trash,
+.scene3__trash,
+.scene4__trash,
+.scene5__trash {
+    position: absolute;
+    width: 25%; 
+    animation: transition-trash 20s linear forwards; 
+    z-index: 10;
+    right: 40vw;
+}
+/* Position the trash appropriately within each scene container */
+.scene2__trash {
+    top: 0;  
+}
+.scene3__trash {
+    top: -100vh;  
+}
+.scene4__trash {
+    top: -200vh;  
+}
+.scene5__trash {
+    top: -300vh;  
+}
+
 
 // Media queries
 
