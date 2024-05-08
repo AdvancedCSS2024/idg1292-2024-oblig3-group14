@@ -43,7 +43,9 @@ The storyboard attached below shows how we mainly wanted our scrollytelling to l
 - rotate - linear infinite
 
 #### Interactions: 
-- .
+- 
 #### Observers:
-- .
+- .container - .panel, Creating a horizontal scroll effect during the first scene
+- .beach - big-wave, Adding classes and changing img=src on intersection
+- -scene5 - scene5__text, making text visible after some time when scrolling to scene .
 
