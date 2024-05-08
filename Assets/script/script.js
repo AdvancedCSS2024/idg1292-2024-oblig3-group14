@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
             pin: true,
             scrub: 1,
             snap: 1 / (sections.length - 1),
-            markers: true,
             end: () => "+=" + document.querySelector(".container").offsetWidth
         }
     });
@@ -92,4 +91,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Observe the element with the class "beach"
     observer2.observe(floor);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the element with the class "big-wave"
+    const watertrash1 = document.querySelector('.water_trash1');
+    const watertrash2 = document.querySelector('.water_trash2');
+    const watertrash3 = document.querySelector('.water_trash3');
+    const watertrash4 = document.querySelector('.water_trash4');
+
+    // Get the height of the .scene2 element
+    const scene2Height = document.querySelector('.scene2').getBoundingClientRect().height;
+
+    // Create a new Intersection Observer
+    const observer3 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            // If the element with the class "beach" is intersecting with the viewport
+            if (entry.isIntersecting) {
+                watertrash1.classList.add('scene2__trash');
+                watertrash1.classList.remove('scene2__trash--hidden');
+                watertrash2.classList.add('scene3__trash');
+                watertrash3.classList.add('scene4__trash');
+                watertrash4.classList.add('scene5__trash');
+                
+                // Add the class "anime_start" to the element with the class "big-wave"
+            } 
+        });
+    }, {
+        rootMargin: `-${scene2Height}px 0px 0px 0px` // Negative margin equal to .scene2 height
+    });
+
+    // Get the element with the class "beach"
+    const water = document.querySelector('.scene3');
+
+    // Observe the element with the class "beach"
+    observer3.observe(water);
 });
