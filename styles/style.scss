@@ -209,7 +209,6 @@ p{
 
     background-image: linear-gradient(to bottom, #0099ff, #0088ee);
     
-    background-color: #0099ff;
     &__fish{
         width: 10vw;
         height: auto;
@@ -557,7 +556,7 @@ p{
     20% { transform: translateY(100vh); } 
     40% { transform: translateY(200vh); } 
     80% { transform: translateY(300vh); } 
-    100% { transform: translateY(378vh); } 
+    100% { transform: translateY(376vh); } 
 }
 .water_trash1,
 .water_trash2,
@@ -672,4 +671,37 @@ p{
         animation: swim4 90s linear infinite, bounce 0.25s infinite;
         z-index: 10;
     }
+
+    @keyframes transition-trash {
+        0% { transform: translateY(-50vh); }  
+        20% { transform: translateY(100vh); } 
+        40% { transform: translateY(200vh); } 
+        80% { transform: translateY(300vh); } 
+        100% { transform: translateY(393vh); } 
+    }
 }
+
+@media (max-width: 480px) {
+    
+    @keyframes transition-trash {
+        0% { transform: translateY(-50vh); }  
+        20% { transform: translateY(100vh); } 
+        40% { transform: translateY(200vh); } 
+        80% { transform: translateY(300vh); } 
+        100% { transform: translateY(395vh); } 
+    }
+
+}
+
+@media (max-width: 1200px) {
+    
+    @keyframes transition-trash {
+        0% { transform: translateY(-50vh); }  
+        20% { transform: translateY(100vh); } 
+        40% { transform: translateY(200vh); } 
+        80% { transform: translateY(300vh); } 
+        100% { transform: translateY(385vh); } 
+    }
+
+}
+

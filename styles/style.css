@@ -218,7 +218,6 @@ section {
 
 .scene2 {
   background-image: linear-gradient(to bottom, #0099ff, #0088ee);
-  background-color: #0099ff;
 }
 .scene2__fish {
   width: 10vw;
@@ -248,7 +247,6 @@ section {
   margin-left: -100px;
   bottom: 30vh;
   position: absolute;
-  -webkit-animation: swim3 100s linear infinite, bounce 10s infinite, rotate 7s linear infinite;
   animation: swim3 100s linear infinite, bounce 10s infinite, rotate 7s linear infinite;
 }
 .scene3__fish {
@@ -481,17 +479,6 @@ section {
 }
 /* Animations for the sea animals */
 /* swim1 */
-@-webkit-keyframes swim1 {
-  0% {
-    margin-left: 100%;
-  }
-  10% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: -235px;
-  }
-}
 @keyframes swim1 {
   0% {
     margin-left: 100%;
@@ -504,17 +491,6 @@ section {
   }
 }
 /* swim2 */
-@-webkit-keyframes swim2 {
-  0% {
-    margin-left: -235px;
-  }
-  90% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 100%;
-  }
-}
 @keyframes swim2 {
   0% {
     margin-left: -235px;
@@ -527,17 +503,6 @@ section {
   }
 }
 /* swim3 */
-@-webkit-keyframes swim3 {
-  0% {
-    margin-left: 100%;
-  }
-  10% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: -150px;
-  }
-}
 @keyframes swim3 {
   0% {
     margin-left: 100%;
@@ -550,20 +515,6 @@ section {
   }
 }
 /* swim4 */
-@-webkit-keyframes swim4 {
-  0% {
-    margin-left: 30px;
-  }
-  45% {
-    margin-left: 100%;
-  }
-  55% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 30px;
-  }
-}
 @keyframes swim4 {
   0% {
     margin-left: 30px;
@@ -585,14 +536,6 @@ section {
   }
   50% {
     transform: translateY(-7.5px);
-  }
-}
-@-webkit-keyframes bounce {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-7.5px);
   }
 }
 /* bounce2 */
@@ -637,7 +580,7 @@ section {
     transform: translateY(300vh);
   }
   100% {
-    transform: translateY(378vh);
+    transform: translateY(376vh);
   }
 }
 .water_trash1,
@@ -742,5 +685,60 @@ section {
     -webkit-animation: swim4 90s linear infinite, bounce 0.25s infinite;
     animation: swim4 90s linear infinite, bounce 0.25s infinite;
     z-index: 10;
+  }
+  @keyframes transition-trash {
+    0% {
+      transform: translateY(-50vh);
+    }
+    20% {
+      transform: translateY(100vh);
+    }
+    40% {
+      transform: translateY(200vh);
+    }
+    80% {
+      transform: translateY(300vh);
+    }
+    100% {
+      transform: translateY(393vh);
+    }
+  }
+}
+@media (max-width: 480px) {
+  @keyframes transition-trash {
+    0% {
+      transform: translateY(-50vh);
+    }
+    20% {
+      transform: translateY(100vh);
+    }
+    40% {
+      transform: translateY(200vh);
+    }
+    80% {
+      transform: translateY(300vh);
+    }
+    100% {
+      transform: translateY(395vh);
+    }
+  }
+}
+@media (max-width: 1200px) {
+  @keyframes transition-trash {
+    0% {
+      transform: translateY(-50vh);
+    }
+    20% {
+      transform: translateY(100vh);
+    }
+    40% {
+      transform: translateY(200vh);
+    }
+    80% {
+      transform: translateY(300vh);
+    }
+    100% {
+      transform: translateY(385vh);
+    }
   }
 }/*# sourceMappingURL=style.css.map */
