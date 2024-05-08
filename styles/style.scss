@@ -19,6 +19,69 @@ body{
    
 
 }
+p{
+    color: white;
+    font-size: 2.5vw;
+    font-family: sans-serif;
+    width: 30ch;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.panel1__text, .panel2__text, .panel3__text1, .panel3__text2, .scene2__text, .scene3__text, .scene5__text1, .scene5__text2{
+    position: absolute;
+}
+.panel1__text{
+    top: 40vh;
+    left: 10vw;
+}
+.panel2__text{
+    top: 50vh;
+    right: 30vw;
+}
+.panel3__text1{
+    left: 3vw;
+}
+.panel3__text2{
+    top: 55vh;
+    left: 3vw;
+}
+.panel3__text2--hidden{
+    opacity: 0 !important;
+}
+.panel3__text2--show{
+    
+    animation: textreveal 12s;
+
+}
+@keyframes textreveal {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.scene2__text{
+    bottom: 10vh;
+    right: 20vw;
+}
+.scene3__text{ 
+    left: 3vw;
+    top: 30vh;
+}
+.scene5__text1{
+    right: 5vw;
+    bottom: 70vh;
+    
+}
+.scene5__text2{
+    left: 3vw;
+    bottom: 30vh;
+}
+.scene5__text2--hidden{
+    visibility: hidden;
+}
+.scene5__text2--show{
+    visibility: visible;
+    animation: textreveal 3s;
+}
  section{
      height: 100vh;
      width: 100%;
@@ -431,6 +494,7 @@ body{
 
 /* End of animations for sea animals */
 
+
 // Making trash descend down the website
 // Make trash start at scene 2 and then descend to scene 5
 @keyframes transition-trash {
@@ -463,6 +527,7 @@ body{
 .scene5__trash {
     top: -300vh;  
 }
+
 
 // Media queries
 
