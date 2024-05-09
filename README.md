@@ -50,7 +50,7 @@ We decided to turn of the animation of the waves and clouds in the first scene i
 ###### For the sinking trash:
 - transition-trash translate the Y axis
 #### Interactions: 
-- 
+- links to the "globalgoals" pages at the end of the page.
 #### Observers:
 - .container - .panel, Creating a horizontal scroll effect during the first scene
 - .beach - big-wave, Adding classes and changing img=src on intersection

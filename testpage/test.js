@@ -15,7 +15,7 @@
       scrollTrigger: {
         trigger: ".scene1",
         pin: true,
-        scrub: 1,
+        scrub: 0,
         snap: 1 / (sections.length - 1),
         markers: true,
         end: () => "+=" + document.querySelector(".container").offsetWidth
