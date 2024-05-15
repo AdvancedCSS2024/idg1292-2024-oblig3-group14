@@ -1,0 +1,11 @@
+1. create/find svg's to use on the page:
+    - trash
+    -waves
+    -bubbles
+    -fish
+    -clouds
+    -boat
+    -fishing-net
+    -beach /island with trees
+
+2. rest of the page

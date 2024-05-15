@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "SuperOcean";
+  src: url("../styles/font/SuperOcean.ttf");
+}
+.viewport-container {
+  position: sticky;
+  margin: 10% auto;
+  border: solid black 10px;
+  width: 50%;
+  height: 200px;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: 500%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.panel {
+  width: 100vw;
+}
+
+.cloud1 {
+  width: 20vh;
+  position: absolute;
+  top: 10vh;
+  animation: moveCloud1 50s linear infinite;
+}
+
+.cloud2 {
+  width: 20vh;
+  position: absolute;
+  top: 20vh;
+  animation: moveCloud2 47s linear infinite;
+}
+
+.cloud3 {
+  width: 20vh;
+  position: absolute;
+  top: 30vh;
+  animation: moveCloud3 51s linear infinite;
+  left: 40px;
+}
+
+.scene1 {
+  background-color: skyblue;
+}
+.scene1 h1 {
+  color: white;
+  font-size: 5vw;
+  margin-left: 3vw;
+  animation: opacityoff 4s ease-out infinite;
+  animation-delay: 4s;
+  font-family: "SuperOcean", sarif;
+}
+.scene1 .backwave {
+  position: absolute;
+  bottom: -5vh;
+  animation: rotatewave infinite 12s;
+  width: 20%;
+}
+.scene1 .frontwave {
+  position: absolute;
+  bottom: -3vh;
+  left: 0;
+  animation: movewave infinite 8s;
+  width: 25%;
+}
+.scene1 .scene1__beach {
+  position: absolute;
+  width: 90%;
+  right: -7vw;
+  bottom: 0;
+}
+.scene1 .beach__trash {
+  position: absolute;
+  width: 25%;
+  transform: rotate(-40deg);
+  bottom: 1vh;
+  left: 30vw;
+}
+
+.scene2 {
+  background-color: red;
+}
+
+.scene3 {
+  background-color: yellow;
+}
+
+@keyframes opacityoff {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotatewave {
+  0% {
+    rotate: 0deg;
+  }
+  33% {
+    rotate: 5deg;
+  }
+  66% {
+    rotate: -5deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+@keyframes movewave {
+  0% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(-6vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+@keyframes moveCloud1 {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes moveCloud2 {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes moveCloud3 {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}/*# sourceMappingURL=test.css.map */
